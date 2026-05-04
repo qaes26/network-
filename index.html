@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل دراسة الشبكات والأمن السيبراني | Network & Security Study Guide</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #0ea5e9;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --card-bg: #ffffff;
+            --success: #22c55e;
+            --danger: #ef4444;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .bilingual-block {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: #f1f5f9;
+            border-right: 4px solid var(--primary);
+            border-radius: 8px;
+        }
+        .arabic {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .english {
+            color: #475569;
+            direction: ltr;
+            text-align: left;
+        }
+        .summary-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .summary-list li {
+            margin-bottom: 10px;
+            padding-right: 20px;
+            position: relative;
+        }
+        .summary-list li::before {
+            content: "✅";
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+        .question-card {
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            background-color: #f8fafc;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        label {
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+        label:hover {
+            background-color: #e2e8f0;
+        }
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+            display: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .feedback.correct {
+            display: block;
+            background-color: #dcfce7;
+            color: var(--success);
+        }
+        .feedback.wrong {
+            display: block;
+            background-color: #fee2e2;
+            color: var(--danger);
+        }
+        .short-answer-text {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #e0f2fe;
+            border-radius: 8px;
+            border-right: 4px solid var(--secondary);
+        }
+        #score-display {
+            font-size: 1.5rem;
+            text-align: center;
+            color: var(--primary);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌐 دليل دراسة الشبكات والأمن السيبراني</h1>
+    <p>Interactive Network & Cybersecurity Study Guide</p>
+</header>
+
+<div class="container">
+    
+    <div class="section">
+        <h2>📖 الشرح المفصل (Detailed Explanation)</h2>
+        
+        <div class="bilingual-block">
+            <div class="arabic">ما هي شبكة الحاسوب؟ [span_0](start_span)هي مجموعة من الحواسيب المرتبطة مع بعضها البعض بهدف تبادل البيانات والموارد[span_0](end_span). [span_1](start_span)تنقسم الشبكات جغرافياً إلى: محلية (LAN) تتواجد في مكان واحد[span_1](end_span)[span_2](start_span)، شبكات مدينة (MAN)[span_2](end_span)[span_3](start_span)، وشبكات واسعة (WAN) تربط دولاً مختلفة[span_3](end_span).</div>
+            [span_4](start_span)<div class="english"><strong>What is a computer network?</strong> It is a group of computers connected to each other to exchange data and resources[span_4](end_span). [span_5](start_span)Geographically, they are divided into: Local Area Networks (LAN) in one location[span_5](end_span)[span_6](start_span), Metropolitan Area Networks (MAN)[span_6](end_span)[span_7](start_span), and Wide Area Networks (WAN) connecting different countries[span_7](end_span).</div>
+        </div>
+
+        <div class="bilingual-block">
+            [span_8](start_span)<div class="arabic">إدارة الشبكات: يمكن أن تكون الشبكة "ند للند" (Peer-to-Peer) حيث يكون كل حاسوب مخدماً وعميلاً بنفس الوقت[span_8](end_span)[span_9](start_span)، أو شبكة "المخدم/العميل" (Client/Server) حيث توجد إدارة مركزية وجهاز مخدم يتحكم بالشبكة[span_9](end_span).</div>
+            [span_10](start_span)<div class="english"><strong>Network Management:</strong> A network can be "Peer-to-Peer" where each computer acts as both server and client[span_10](end_span)[span_11](start_span), or "Client/Server" featuring centralized management with a dedicated server controlling the network[span_11](end_span).</div>
+        </div>
+
+        <p></p>
+
+        <div class="bilingual-block">
+            [span_12](start_span)<div class="arabic">النماذج الهندسية (Topologies): تشمل المسار الخطي (Bus) الذي يستخدم كابلاً واحداً[span_12](end_span)[span_13](start_span)، الشبكة الحلقية (Ring) التي تنقل البيانات في اتجاه واحد[span_13](end_span)[span_14](start_span)، والنجمية (Star) التي تتصل بجهاز مركزي[span_14](end_span). [span_15](start_span)هناك أيضاً الترابطية (Mesh) حيث ترتبط كل عقدة بالأخرى[span_15](end_span).</div>
+            [span_16](start_span)<div class="english"><strong>Topologies:</strong> These include Bus (using a single cable)[span_16](end_span)[span_17](start_span), Ring (data moves in one direction)[span_17](end_span)[span_18](start_span), and Star (connected to a central device)[span_18](end_span). [span_19](start_span)There is also the Mesh topology where every node connects to others[span_19](end_span).</div>
+        </div>
+
+        <p></p>
+
+        <div class="bilingual-block">
+            [span_20](start_span)<div class="arabic">وسائط الاتصال (الكابلات): الكابلات المجدولة (Twisted Pair) وهي أسلاك نحاسية ملفوفة لتقليل التداخل[span_20](end_span). [span_21](start_span)الكابلات المحورية (Coaxial) المحاطة بطبقة عازلة[span_21](end_span). [span_22](start_span)والألياف الضوئية (Fiber Optic) وهي أنابيب زجاجية دقيقة تنقل البيانات عبر الضوء بسرعة فائقة[span_22](end_span).</div>
+            [span_23](start_span)<div class="english"><strong>Communication Media (Cables):</strong> Twisted Pair cables are copper wires twisted to reduce interference[span_23](end_span). [span_24](start_span)Coaxial cables are surrounded by an insulating layer[span_24](end_span). [span_25](start_span)Fiber Optic cables are tiny glass tubes that transmit data via light at extremely high speeds[span_25](end_span).</div>
+        </div>
+
+        <p></p>
+
+        <div class="bilingual-block">
+            [span_26](start_span)<div class="arabic">الأمن السيبراني وأمن المعلومات: أمن المعلومات يشمل حماية البيانات الرقمية والورقية[span_26](end_span)[span_27](start_span)، بينما الأمن السيبراني يركز على الفضاء الرقمي[span_27](end_span). [span_28](start_span)يعتمد أمن المعلومات على 3 عناصر: السرية، التكاملية (سلامة المحتوى)، واستمرارية التوفر[span_28](end_span). [span_29](start_span)لحماية الأجهزة نستخدم الجدار الناري (Firewall) الذي يفصل الحاسوب عن الاتصالات المشبوهة[span_29](end_span).</div>
+            [span_30](start_span)<div class="english"><strong>Cybersecurity vs InfoSec:</strong> Information Security protects both digital and physical data[span_30](end_span)[span_31](start_span), while Cybersecurity focuses strictly on the digital realm[span_31](end_span). [span_32](start_span)InfoSec relies on 3 pillars: Confidentiality, Integrity, and Availability[span_32](end_span). [span_33](start_span)To protect devices, we use a Firewall to block suspicious connections[span_33](end_span).</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📋 ملخص لأهم النقاط (Summary)</h2>
+        <ul class="summary-list">
+            [span_34](start_span)<li><strong>أنواع الشبكات (Network Types):</strong> LAN (محلية)[span_34](end_span)[span_35](start_span)، MAN (مدينة)[span_35](end_span)[span_36](start_span)، WAN (واسعة)[span_36](end_span).</li>
+            [span_37](start_span)<li><strong>أجهزة الشبكة (Network Devices):</strong> المخدم (Server)[span_37](end_span)[span_38](start_span)، محطات العمل (Workstations)[span_38](end_span)[span_39](start_span)، المبدلات والموجهات (Switches & Routers)[span_39](end_span).</li>
+            [span_40](start_span)<li><strong>النماذج الهندسية (Topologies):</strong> Bus[span_40](end_span)[span_41](start_span), Ring[span_41](end_span)[span_42](start_span), Star[span_42](end_span)[span_43](start_span), Mesh[span_43](end_span)[span_44](start_span), Hierarchical[span_44](end_span).</li>
+            [span_45](start_span)<li><strong>الكابلات (Cables):</strong> Twisted Pair[span_45](end_span)[span_46](start_span), Coaxial[span_46](end_span)[span_47](start_span), Fiber Optic (الأسرع وتستخدم الضوء)[span_47](end_span).</li>
+            [span_48](start_span)<li><strong>عناصر الحماية (CIA Triad):</strong> السرية (Confidentiality)[span_48](end_span)[span_49](start_span)، السلامة (Integrity)[span_49](end_span)[span_50](start_span)، التوفر (Availability)[span_50](end_span).</li>
+            [span_51](start_span)<li><strong>أنواع القراصنة (Hackers):</strong> ذوي القبعة البيضاء (أخلاقيون)[span_51](end_span)[span_52](start_span)، القبعة السوداء (تخريبيون)[span_52](end_span).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🧠 أسئلة تفاعلية (Interactive Quiz)</h2>
+        
+        <div class="question-card" id="q1">
+            <h3>1. أي نوع من الكابلات يستخدم الضوء لنقل البيانات؟ (Which cable uses light to transmit data?)</h3>
+            <div class="options">
+                <label><input type="radio" name="q1" value="wrong"> الكابلات المجدولة (Twisted Pair)</label>
+                <label><input type="radio" name="q1" value="wrong"> الكابلات المحورية (Coaxial)</label>
+                <label><input type="radio" name="q1" value="correct"> الألياف الضوئية (Fiber Optic)</label>
+            </div>
+            <button onclick="checkAnswer('q1')">تحقق من الإجابة / Check</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question-card" id="q2">
+            <h3>2. في أي هيكلية (Topology) يتم توصيل جميع الأجهزة بجهاز مركزي؟ (In which topology are all devices connected to a central device?)</h3>
+            <div class="options">
+                <label><input type="radio" name="q2" value="wrong"> المسار الخطي (Bus)</label>
+                <label><input type="radio" name="q2" value="correct"> النجمية (Star)</label>
+                <label><input type="radio" name="q2" value="wrong"> الحلقية (Ring)</label>
+            </div>
+            <button onclick="checkAnswer('q2')">تحقق من الإجابة / Check</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question-card" id="q3">
+            <h3>3. صح أم خطأ: أمن المعلومات يشمل حماية الملفات الورقية بينما الأمن السيبراني يركز على الفضاء الرقمي. <br> (T/F: InfoSec includes physical files while Cybersecurity focuses on the digital space.)</h3>
+            <div class="options">
+                <label><input type="radio" name="q3" value="correct"> صح (True)</label>
+                <label><input type="radio" name="q3" value="wrong"> خطأ (False)</label>
+            </div>
+            <button onclick="checkAnswer('q3')">تحقق من الإجابة / Check</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question-card">
+            <h3>4. سؤال مقالي (Short Answer): ما هو الجدار الناري (Firewall)؟</h3>
+            <button onclick="toggleAnswer('sa1')">إظهار/إخفاء الإجابة (Show/Hide Answer)</button>
+            <div id="sa1" class="short-answer-text">
+                [span_53](start_span)<strong>الإجابة:</strong> هو الحاجز الذي يفصل الحاسوب عن الاتصال وإرسال واستقبال البيانات، حيث يسمح لبرامج معينة بنقل البيانات ويحظر الاتصالات المشبوهة[span_53](end_span).
+                <br><br>
+                [span_54](start_span)<strong>Answer:</strong> It is the barrier that separates the computer from sending/receiving data across networks, allowing specific programs to communicate while blocking suspicious connections[span_54](end_span).
+            </div>
+        </div>
+
+        <div id="score-display">النتيجة: <span id="score-val">0</span> / 3</div>
+    </div>
+</div>
+
+<script>
+    let score = 0;
+    let answered = {q1: false, q2: false, q3: false};
+
+    function checkAnswer(questionId) {
+        if (answered[questionId]) return; // Prevent multiple grading
+        
+        const selected = document.querySelector(`input[name="${questionId}"]:checked`);
+        const feedbackEl = document.querySelector(`#${questionId} .feedback`);
+        
+        if (!selected) {
+            alert("الرجاء اختيار إجابة أولاً! Please select an answer!");
+            return;
+        }
+
+        answered[questionId] = true;
+        
+        if (selected.value === "correct") {
+            feedbackEl.textContent = "✅ إجابة صحيحة! Correct Answer!";
+            feedbackEl.className = "feedback correct";
+            score++;
+        } else {
+            feedbackEl.textContent = "❌ إجابة خاطئة! Wrong Answer!";
+            feedbackEl.className = "feedback wrong";
+        }
+        
+        document.getElementById('score-val').textContent = score;
+    }
+
+    function toggleAnswer(id) {
+        const el = document.getElementById(id);
+        if (el.style.display === "block") {
+            el.style.display = "none";
+        } else {
+            el.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
